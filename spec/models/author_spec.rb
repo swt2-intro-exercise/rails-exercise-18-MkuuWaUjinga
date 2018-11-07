@@ -5,6 +5,7 @@ describe Author, type: :model do
   before :all do
     @author = FactoryBot.create(:author)
   end
+
   it "should have a first name, last name and homepage field and a method for the author's full name" do
     expect(@author.first_name).to eq "Alan"
     expect(@author.last_name).to eq "Turing"
