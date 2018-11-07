@@ -5,4 +5,6 @@ class Paper < ApplicationRecord
   validates :venue, presence: true
 
   has_and_belongs_to_many :authors
+
+  scope :published_in, ->(time) { where("year==?", time) }
 end
