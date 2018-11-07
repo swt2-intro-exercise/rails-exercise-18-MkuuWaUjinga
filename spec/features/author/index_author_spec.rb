@@ -23,4 +23,5 @@ describe "Index author page", type: :feature do
     visit authors_path
     expect(page).to have_link 'Edit', href: edit_author_path(@author)
   end
+
 end
